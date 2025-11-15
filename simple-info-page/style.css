@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    height: 50px;
+    padding: 0 20px;
+}
+
+nav h1 {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+nav .links a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav .links a:hover {
+    color: cadetblue;
+    text-shadow: 0px 0px 2px black;
+}
+
+.login-btn {
+    font-weight: bold;
+    color: gray;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid aqua;
+}
+
+.login-btn:hover {
+    color: black;
+    background-color: aqua;
+    text-shadow: 0px 0px 1px black;
+}
+
+.heading {
+    background: url("images/village.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+}
+
+.heading h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.sites {
+    background-color: lightsalmon;
+    height: 350px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.sites h1 {
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.card h2 {
+    font-size: 16px;
+    padding: 6px 0;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.guide {
+    margin: 50px auto;
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+    background-color: skyblue;
+    border-bottom: 5px solid green;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    text-shadow: 0px 0px 1px black;
+}
+
+.guide img {
+    width: 250px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.right p {
+    margin: 15px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: none;
+    }
+
+    .guide {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .right h2 {
+        margin-top: 15px;
+    }
+    .guide img {
+        width: 200px;
+    }
+
+    .sites {
+        height: 400px;
+    }
+}
